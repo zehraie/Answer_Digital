@@ -18,6 +18,12 @@ public class FormAutPage  {
     @FindBy(xpath = "//i[@class=fa fa-2x fa-sign-in]")
     public WebElement login;
 
+    public void login (String userNameStr, String passwordStr){
+        userName.sendKeys(userNameStr);
+        password.sendKeys(passwordStr);
+        login.click();
+    }
+
 
 
 
