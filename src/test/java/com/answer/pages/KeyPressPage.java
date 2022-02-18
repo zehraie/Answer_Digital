@@ -12,5 +12,8 @@ public class KeyPressPage extends BasePage{
     @FindBy(id ="result")
     public WebElement textElement;
 
-//      ///Niye olmuyor
+    public String getText(){
+
+        return textElement.getText();
+    }
 }
