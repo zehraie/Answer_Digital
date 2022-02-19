@@ -19,7 +19,8 @@ public class FormAuthenStepDefs {
     }
     @Given("the user clicks on {string} link")
     public void the_user_clicks_on_link(String FormAut) {
-        formAutPage.formAuthentLink.click();
+        // formAutPage.formAuthentLink.click();
+       formAutPage.navigate(FormAut);
 
     }
     @When("the user enters valid credentials")
@@ -34,7 +35,7 @@ public class FormAuthenStepDefs {
         BrowserUtils.waitFor(3);
         String actualText = formAutPage.getLogInMessage.getText().trim();
         System.out.println(actualText);
-        //Assert.assertEquals("You logged into a secure area!",actualText); OLMUYOR???????*********
+        Assert.assertTrue(actualText.contains("You logged into a secure area!"));
     }
 
     @When("the user logs out")
@@ -55,9 +56,9 @@ public class FormAuthenStepDefs {
 
     @Then("user should see error {string} message")
     public void user_should_see_error_message(String expectedMessage) {
-       //String actualErrorMessage = formAutPage.getErrorMessage.getText().trim();
-        //Assert.assertEquals(expectedMessage,new FormAutPage().getErrorMessage.getText().trim());
-/////////?????????????????????????????????????
+       String actualErrorMessage = formAutPage.getErrorMessage.getText().trim();
+        Assert.assertTrue(actualErrorMessage.contains("Your username is invalid!"));
+
     }
 
     @When("user enters valid {string} and invalid {string}")
