@@ -1,9 +1,9 @@
-@wip
+
 Feature:Login page
 
   Background:
     Given the user is on the Menu page
-    And the user clicks on "form authentication" link
+    And the user clicks on form authentication link
 
   Scenario:the user can login with valid credentials
     When the user enters valid credentials
@@ -28,7 +28,7 @@ Feature:Login page
 
     Scenario Outline: User can not login with valid username and invalid password
       When user enters valid "<username>" and invalid "<password>"
-      Then user should see error "Your username is invalid!" message
+      Then user should see error "Your password is invalid!" message
       Examples:
         | username | password              |
         | tomsmith | supersecretpassword!  |

@@ -1,11 +1,9 @@
 package com.answer.pages;
 
-import com.answer.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class FormAutPage extends BasePage {
+public class FormAutPage extends HomePage {
 
     @FindBy(id ="username")
     public WebElement userNameBox;
@@ -17,17 +15,17 @@ public class FormAutPage extends BasePage {
     public WebElement login;
 
 
-    @FindBy(xpath = "//div[normalize-space(text())='You logged into a secure area!']")
+    @FindBy(css = ".flash.success")
     public WebElement getLogInMessage;
 
-    @FindBy(xpath = "//div[normalize-space(text())='Your password is invalid!']")
+    @FindBy(css = ".flash.error")
     public WebElement getErrorMessage;
 
     @FindBy(xpath = "//i[contains(text(),'Logout')]")
     public WebElement logOut;
 
-    @FindBy(xpath = "//h2")
-    public WebElement loginPageElement;
+    @FindBy(xpath = "//h2[text()='Login Page']")
+    public WebElement loginPageTitle;
 
 
     public void login (String userNameStr, String passwordStr){

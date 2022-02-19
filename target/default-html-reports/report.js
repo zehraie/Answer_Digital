@@ -2,24 +2,24 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "Key Presses page",
   "description": "",
-  "keyword": "Feature",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "name": "the user can click the key",
+  "description": "",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@wip"
     }
   ]
 });
-formatter.scenarioOutline({
-  "name": "the user can click the key",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
 formatter.step({
   "name": "the user is on the Menu page",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "the user clicks on \"\u003cKey presses\u003e\" link",
+  "name": "the user clicks on Key presses link",
   "keyword": "And "
 });
 formatter.step({
@@ -27,7 +27,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "name": "the user can see the \"\u003ckey\u003e\" text on web page",
+  "name": "the user can see the \"\u003cexpectedKey\u003e\" text on web page",
   "keyword": "Then "
 });
 formatter.examples({
@@ -37,27 +37,32 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "key"
+        "key",
+        "expectedKey"
       ]
     },
     {
       "cells": [
-        "a"
-      ]
-    },
-    {
-      "cells": [
+        "3",
         "3"
       ]
     },
     {
       "cells": [
-        "!"
+        "h",
+        "H"
       ]
     },
     {
       "cells": [
-        "13"
+        "k",
+        "K"
+      ]
+    },
+    {
+      "cells": [
+        "*",
+        "MULTIPLY"
       ]
     }
   ]
@@ -86,66 +91,12 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "the user clicks on \"\u003cKey presses\u003e\" link",
+  "name": "the user clicks on Key presses link",
   "keyword": "And "
-});
-formatter.match({
-  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user clicks on any \"a\"",
-  "keyword": "When "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
-});
-formatter.step({
-  "name": "the user can see the \"a\" text on web page",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "the user can click the key",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user is on the Menu page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user clicks on \"\u003cKey presses\u003e\" link",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
 });
 formatter.step({
   "name": "the user clicks on any \"3\"",
@@ -190,17 +141,15 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "the user clicks on \"\u003cKey presses\u003e\" link",
+  "name": "the user clicks on Key presses link",
   "keyword": "And "
 });
-formatter.match({
-  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user clicks on any \"!\"",
+  "name": "the user clicks on any \"h\"",
   "keyword": "When "
 });
 formatter.match({});
@@ -208,7 +157,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "the user can see the \"!\" text on web page",
+  "name": "the user can see the \"H\" text on web page",
   "keyword": "Then "
 });
 formatter.match({});
@@ -242,17 +191,15 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "the user clicks on \"\u003cKey presses\u003e\" link",
+  "name": "the user clicks on Key presses link",
   "keyword": "And "
 });
-formatter.match({
-  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user clicks on any \"13\"",
+  "name": "the user clicks on any \"k\"",
   "keyword": "When "
 });
 formatter.match({});
@@ -260,7 +207,57 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "the user can see the \"13\" text on web page",
+  "name": "the user can see the \"K\" text on web page",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "the user can click the key",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "the user is on the Menu page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "the user clicks on Key presses link",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user clicks on any \"*\"",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user can see the \"MULTIPLY\" text on web page",
   "keyword": "Then "
 });
 formatter.match({});
