@@ -1,4 +1,4 @@
-@wip
+
 Feature: Key Presses page
 
   Scenario Outline: the user can click the key

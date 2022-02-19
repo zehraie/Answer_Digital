@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public abstract class BasePage {
 
     @FindBy (linkText = "Form Authentication")
-    public WebElement formAuthent;
+    public WebElement formAuthentLink;
 
     @FindBy(linkText = "Infinite Scroll")
     public WebElement infinScroll;

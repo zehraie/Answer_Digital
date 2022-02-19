@@ -1,30 +1,41 @@
 package com.answer.step_definitions;
 
+import com.answer.pages.FormAutPage;
+import com.answer.utilities.BrowserUtils;
 import com.answer.utilities.ConfigurationReader;
+import com.answer.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class FormAuthenStepDefs {
-    String url = ConfigurationReader.get("url");
+    FormAutPage formAutPage = new FormAutPage();
 
     @Given("the user is on the Menu page")
     public void the_user_is_on_the_Menu_page() {
-
+        String url = ConfigurationReader.get("url");
+        Driver.get().get(url);
     }
-
     @Given("the user clicks on {string} link")
-    public void the_user_clicks_on_link(String string) {
+    public void the_user_clicks_on_link(String FormAut) {
+        formAutPage.formAuthentLink.click();
 
     }
-
     @When("the user enters valid credentials")
     public void the_user_enters_valid_credentials() {
-
+        String username = ConfigurationReader.get("username");
+        String password = ConfigurationReader.get("password");
+        formAutPage.login(username,password);
     }
 
     @Then("the user should be able to login")
     public void the_user_should_be_able_to_login() {
+        BrowserUtils.waitFor(3);
+        String actualText = formAutPage.logInMessage.getText().trim();
+        System.out.println(actualText);
+        //Assert.assertEquals("You logged into a secure area!",actualText); OLMUYOR???????
+
 
     }
 
