@@ -6,6 +6,6 @@ import org.openqa.selenium.support.FindBy;
 public class InfinitScrollPage extends BasePage {
 
     @FindBy(xpath = "//h3")
-    public WebElement infintScrollText;
+    public WebElement infintScrollTitle;
 
 }
