@@ -65,10 +65,188 @@ formatter.match({
   "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_should_be_able_to_login()"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c... into a secure area![]\u003e but was:\u003c... into a secure area![\n×]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.answer.step_definitions.FormAuthenStepDefs.the_user_should_be_able_to_login(FormAuthenStepDefs.java:37)\r\n\tat ✽.the user should be able to login(file:///C:/Users/HP/IdeaProjects/Answer_Digital/src/test/resources/features/FormAuthentication.feature:10)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
+formatter.step({
+  "name": "the user logs out",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_logs_out()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user should be able to see Login Page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_should_be_able_to_see_Login_Page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "User can not login with any invalid username and valid password",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "user enters invalid \"\u003cusername\u003e\" and valid \"\u003cpassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "user should see error \"Your username is invalid!\" message",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ]
+    },
+    {
+      "cells": [
+        "tomsmithh",
+        "SuperSecretPassword!"
+      ]
+    },
+    {
+      "cells": [
+        "tomsmit",
+        "SuperSecretPassword!"
+      ]
+    }
+  ]
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is on the Menu page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on \"form authentication\" link",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User can not login with any invalid username and valid password",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "user enters invalid \"tomsmithh\" and valid \"SuperSecretPassword!\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.user_enters_invalid_and_valid(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see error \"Your username is invalid!\" message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.user_should_see_error_message(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is on the Menu page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on \"form authentication\" link",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User can not login with any invalid username and valid password",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "user enters invalid \"tomsmit\" and valid \"SuperSecretPassword!\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.user_enters_invalid_and_valid(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see error \"Your username is invalid!\" message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.FormAuthenStepDefs.user_should_see_error_message(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });

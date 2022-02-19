@@ -32,36 +32,40 @@ public class FormAuthenStepDefs {
     @Then("the user should be able to login")
     public void the_user_should_be_able_to_login() {
         BrowserUtils.waitFor(3);
-        String actualText = formAutPage.logInMessage.getText().trim();
+        String actualText = formAutPage.getLogInMessage.getText().trim();
         System.out.println(actualText);
-        //Assert.assertEquals("You logged into a secure area!",actualText); OLMUYOR???????
-
-
+        //Assert.assertEquals("You logged into a secure area!",actualText); OLMUYOR???????*********
     }
 
     @When("the user logs out")
     public void the_user_logs_out() {
-
+        formAutPage.logOut.click();
     }
-
     @Then("the user should be able to see Login Page")
     public void the_user_should_be_able_to_see_Login_Page() {
+      Assert.assertTrue(formAutPage.loginPageElement.isDisplayed());
 
     }
-
-    @When("user enters invalid {string} and {string}")
-    public void user_enters_invalid_and(String string, String string2) {
-
+    @When("user enters invalid {string} and valid {string}")
+     public void user_enters_invalid_and_valid(String username, String password) {
+       formAutPage.userNameBox.sendKeys(username);
+       formAutPage.passwordBox.sendKeys(password);
+       formAutPage.login.click();
     }
 
     @Then("user should see error {string} message")
-    public void user_should_see_error_message(String string) {
-
+    public void user_should_see_error_message(String expectedMessage) {
+       //String actualErrorMessage = formAutPage.getErrorMessage.getText().trim();
+        //Assert.assertEquals(expectedMessage,new FormAutPage().getErrorMessage.getText().trim());
+/////////?????????????????????????????????????
     }
 
     @When("user enters valid {string} and invalid {string}")
-    public void user_enters_valid_and_invalid(String string, String string2) {
+    public void user_enters_valid_and_invalid(String username, String password) {
+        formAutPage.userNameBox.sendKeys(username);
+        formAutPage.passwordBox.sendKeys(password);
+        formAutPage.login.click();
 
-    }
+   }
 
 }

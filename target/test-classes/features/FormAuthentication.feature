@@ -8,16 +8,16 @@ Feature:Login page
   Scenario:the user can login with valid credentials
     When the user enters valid credentials
     Then the user should be able to login
-#    When the user logs out
-#    Then the user should be able to see Login Page
-#
-#  Scenario Outline:User can not login with any invalid username and valid password
-#    When user enters invalid "<username>" and "<password>"
-#    Then user should see error "Your username is invalid!" message
-#    Examples:
-#      | username  | password             |
-#      | tomsmithh | SuperSecretPassword! |
-#      | tomsmit   | SuperSecretPassword! |
+    When the user logs out
+    Then the user should be able to see Login Page
+
+  Scenario Outline:User can not login with any invalid username and valid password
+    When user enters invalid "<username>" and valid "<password>"
+    Then user should see error "Your username is invalid!" message
+    Examples:
+      | username  | password             |
+      | tomsmithh | SuperSecretPassword! |
+      | tomsmit   | SuperSecretPassword! |
 #      | tomsmith1 | SuperSecretPassword! |
 #      | tomsmith! | SuperSecretPassword! |
 #      | tom smith | SuperSecretPassword! |
@@ -40,4 +40,4 @@ Feature:Login page
 #        | tomsmith | 2SuperSecretPassword! |
 #        | tomsmith | SuperSecret&Password! |
 #        | tomsmith |                       |
-#
+

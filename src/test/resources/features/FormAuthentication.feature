@@ -12,7 +12,7 @@ Feature:Login page
     Then the user should be able to see Login Page
 
   Scenario Outline:User can not login with any invalid username and valid password
-    When user enters invalid "<username>" and "<password>"
+    When user enters invalid "<username>" and valid "<password>"
     Then user should see error "Your username is invalid!" message
     Examples:
       | username  | password             |

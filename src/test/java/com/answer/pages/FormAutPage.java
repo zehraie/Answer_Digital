@@ -16,10 +16,18 @@ public class FormAutPage extends BasePage {
     @FindBy(xpath = "//i[@class='fa fa-2x fa-sign-in']")
     public WebElement login;
 
-    @FindBy(id = "flash")
-    public WebElement logInMessage;
-    @FindBy(xpath = "//div[normalize-space(@id)='flash']")
+
+    @FindBy(xpath = "//div[normalize-space(text())='You logged into a secure area!']")
     public WebElement getLogInMessage;
+
+    @FindBy(xpath = "//div[normalize-space(text())='Your password is invalid!']")
+    public WebElement getErrorMessage;
+
+    @FindBy(xpath = "//i[contains(text(),'Logout')]")
+    public WebElement logOut;
+
+    @FindBy(xpath = "//h2")
+    public WebElement loginPageElement;
 
 
     public void login (String userNameStr, String passwordStr){
