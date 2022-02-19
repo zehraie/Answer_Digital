@@ -23,7 +23,7 @@ public class InfiniteScrollStepDefs {
     }
 
     @Then("the user shouldn't see the {string} title")
-    public void the_user_shouldn_t_see_the_title(String string) {
+    public void the_user_shouldn_t_see_the_title(String infiScroll) {
        Assert.assertFalse(infinitScrollPage.infintScrollTitle.isDisplayed());
 
     }
@@ -36,7 +36,7 @@ public class InfiniteScrollStepDefs {
     }
 
     @Then("the user can see {string} title")
-    public void the_user_can_see_title(String string) {
+    public void the_user_can_see_title(String infiScroll) {
         Assert.assertTrue(infinitScrollPage.infintScrollTitle.isDisplayed());
     }
 

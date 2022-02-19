@@ -3,191 +3,26 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3083000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the Menu page",
-            "match": {
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 480000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user clicks on \"form authentication\" link",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"form authentication\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-19T02:15:21.444Z",
+        "start_timestamp": "2022-02-19T03:27:10.591Z",
         "before": [
           {
             "result": {
-              "duration": 3518000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.answer.step_definitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 8,
-        "name": "the user can login with valid credentials",
+        "line": 12,
+        "name": "the user can click the key",
         "description": "",
-        "id": "login-page;the-user-can-login-with-valid-credentials",
+        "id": "key-presses-page;the-user-can-click-the-key;;2",
         "after": [
           {
             "result": {
-              "duration": 746000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.answer.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 601000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user enters valid credentials",
-            "match": {
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_enters_valid_credentials()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3041000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the user should be able to login",
-            "match": {
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_should_be_able_to_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 347000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the user logs out",
-            "match": {
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_logs_out()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 69000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user should be able to see Login Page",
-            "match": {
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_should_be_able_to_see_Login_Page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3196000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user is on the Menu page",
-            "match": {
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 512000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user clicks on \"form authentication\" link",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"form authentication\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-02-19T02:15:33.488Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3759000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.answer.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "User can not login with any invalid username and valid password",
-        "description": "",
-        "id": "login-page;user-can-not-login-with-any-invalid-username-and-valid-password;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 741000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "com.answer.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -199,62 +34,8 @@
         "steps": [
           {
             "result": {
-              "duration": 478000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enters invalid \"tomsmithh\" and valid \"SuperSecretPassword!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"tomsmithh\"",
-                  "offset": 20
-                },
-                {
-                  "val": "\"SuperSecretPassword!\"",
-                  "offset": 42
-                }
-              ],
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.user_enters_invalid_and_valid(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
               "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user should see error \"Your username is invalid!\" message",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Your username is invalid!\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.user_should_see_error_message(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4142000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "the user is on the Menu page",
@@ -265,46 +46,66 @@
           },
           {
             "result": {
-              "duration": 617000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
-            "name": "the user clicks on \"form authentication\" link",
+            "name": "the user clicks on \"\u003cKey presses\u003e\" link",
             "match": {
               "arguments": [
                 {
-                  "val": "\"form authentication\"",
+                  "val": "\"\u003cKey presses\u003e\"",
                   "offset": 19
                 }
               ],
               "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "the user clicks on any \"a\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "the user can see the \"a\" text on web page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
           }
         ]
       },
       {
-        "start_timestamp": "2022-02-19T02:15:42.183Z",
+        "start_timestamp": "2022-02-19T03:27:10.695Z",
         "before": [
           {
             "result": {
-              "duration": 3796000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "com.answer.step_definitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 20,
-        "name": "User can not login with any invalid username and valid password",
+        "line": 13,
+        "name": "the user can click the key",
         "description": "",
-        "id": "login-page;user-can-not-login-with-any-invalid-username-and-valid-password;;3",
+        "id": "key-presses-page;the-user-can-click-the-key;;3",
         "after": [
           {
             "result": {
-              "duration": 739000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "match": {
               "location": "com.answer.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -316,42 +117,214 @@
         "steps": [
           {
             "result": {
-              "duration": 500000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 15,
-            "name": "user enters invalid \"tomsmit\" and valid \"SuperSecretPassword!\"",
+            "line": 5,
+            "name": "the user is on the Menu page",
+            "match": {
+              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user clicks on \"\u003cKey presses\u003e\" link",
             "match": {
               "arguments": [
                 {
-                  "val": "\"tomsmit\"",
-                  "offset": 20
-                },
-                {
-                  "val": "\"SuperSecretPassword!\"",
-                  "offset": 40
+                  "val": "\"\u003cKey presses\u003e\"",
+                  "offset": 19
                 }
               ],
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.user_enters_invalid_and_valid(java.lang.String,java.lang.String)"
+              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "the user clicks on any \"3\"",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 16,
-            "name": "user should see error \"Your username is invalid!\" message",
+            "line": 8,
+            "name": "the user can see the \"3\" text on web page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-19T03:27:10.708Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.answer.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "the user can click the key",
+        "description": "",
+        "id": "key-presses-page;the-user-can-click-the-key;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.answer.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the Menu page",
+            "match": {
+              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user clicks on \"\u003cKey presses\u003e\" link",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Your username is invalid!\"",
-                  "offset": 22
+                  "val": "\"\u003cKey presses\u003e\"",
+                  "offset": 19
                 }
               ],
-              "location": "com.answer.step_definitions.FormAuthenStepDefs.user_should_see_error_message(java.lang.String)"
+              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "the user clicks on any \"!\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "the user can see the \"!\" text on web page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-19T03:27:10.720Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.answer.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "the user can click the key",
+        "description": "",
+        "id": "key-presses-page;the-user-can-click-the-key;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.answer.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user is on the Menu page",
+            "match": {
+              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user clicks on \"\u003cKey presses\u003e\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cKey presses\u003e\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_clicks_on_link(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "the user clicks on any \"13\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "the user can see the \"13\" text on web page",
+            "match": {},
             "keyword": "Then "
           }
         ],
@@ -362,11 +335,11 @@
         ]
       }
     ],
-    "name": "Login page",
+    "name": "Key Presses page",
     "description": "",
-    "id": "login-page",
+    "id": "key-presses-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FormAuthentication.feature",
+    "uri": "file:src/test/resources/features/KeyPress.feature",
     "tags": [
       {
         "name": "@wip",

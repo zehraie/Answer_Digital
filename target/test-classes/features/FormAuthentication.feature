@@ -1,4 +1,4 @@
-@wip
+
 Feature:Login page
 
   Background:
@@ -18,26 +18,26 @@ Feature:Login page
       | username  | password             |
       | tomsmithh | SuperSecretPassword! |
       | tomsmit   | SuperSecretPassword! |
-#      | tomsmith1 | SuperSecretPassword! |
-#      | tomsmith! | SuperSecretPassword! |
-#      | tom smith | SuperSecretPassword! |
-#      | 5tomsmith | SuperSecretPassword! |
-#      | *tomsmith | SuperSecretPassword! |
-#      | toms?mith | SuperSecretPassword! |
-#      |           | SuperSecretPassword! |
-#
-#    Scenario Outline: User can not login with valid username and invalid password
-#      When user enters valid "<username>" and invalid "<password>"
-#      Then user should see error "Your username is invalid!" message
-#      Examples:
-#        | username | password              |
-#        | tomsmith | supersecretpassword!  |
-#        | tomsmith | SUPERSECRETPASSWORD!  |
-#        | tomsmith | SuperSecretPasswordI  |
-#        | tomsmith | Super SecretPassword! |
-#        | tomsmith | SuperSecretPassword1  |
-#        | tomsmith | +SuperSecretPassword! |
-#        | tomsmith | 2SuperSecretPassword! |
-#        | tomsmith | SuperSecret&Password! |
-#        | tomsmith |                       |
+      | tomsmith1 | SuperSecretPassword! |
+      | tomsmith! | SuperSecretPassword! |
+      | tom smith | SuperSecretPassword! |
+      | 5tomsmith | SuperSecretPassword! |
+      | *tomsmith | SuperSecretPassword! |
+      | toms?mith | SuperSecretPassword! |
+      |           | SuperSecretPassword! |
+
+    Scenario Outline: User can not login with valid username and invalid password
+      When user enters valid "<username>" and invalid "<password>"
+      Then user should see error "Your username is invalid!" message
+      Examples:
+        | username | password              |
+        | tomsmith | supersecretpassword!  |
+        | tomsmith | SUPERSECRETPASSWORD!  |
+        | tomsmith | SuperSecretPasswordI  |
+        | tomsmith | Super SecretPassword! |
+        | tomsmith | SuperSecretPassword1  |
+        | tomsmith | +SuperSecretPassword! |
+        | tomsmith | 2SuperSecretPassword! |
+        | tomsmith | SuperSecret&Password! |
+        | tomsmith |                       |
 
