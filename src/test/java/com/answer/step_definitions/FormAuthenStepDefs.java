@@ -19,12 +19,17 @@ public class FormAuthenStepDefs {
         String url = ConfigurationReader.get("url");
         Driver.get().get(url);
     }
-    @Given("the user clicks on form authentication link")
-    public void the_user_clicks_on_link() {
-        homePage.formAuthentLink.click();
-
-
+    @Given("the user clicks on {string} link")
+    public void the_user_clicks_on_link(String FormAut) throws InterruptedException {
+        Thread.sleep(5000);
+        homePage.navigate(FormAut);
     }
+
+    //    @Given("the user clicks on form authentication link")
+//    public void the_user_clicks_on_link() {
+//        homePage.formAuthentLink.click();
+//
+//    }
     @When("the user enters valid credentials")
     public void the_user_enters_valid_credentials() {
         String username = ConfigurationReader.get("username");

@@ -8,18 +8,18 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
-     @FindBy (linkText = "Form Authentication")
-    public WebElement formAuthentLink;
+//     @FindBy (linkText = "Form Authentication")
+//    public WebElement formAuthentLink;
+//
+//    @FindBy(linkText = "Infinite Scroll")
+//    public WebElement infinScrollLink;
+//
+//    @FindBy(linkText = "Key Presses")
+//    public WebElement keyPressLink;
 
-    @FindBy(linkText = "Infinite Scroll")
-    public WebElement infinScroll;
-
-    @FindBy(linkText = "Key Presses")
-    public WebElement keyPressLink;
-
-//    public void navigate(String link){
-//        Driver.get().findElement(By.linkText(link)).click();
-//    }
+    public void navigate(String link){
+        Driver.get().findElement(By.linkText(link)).click();
+    }
 
 
 
