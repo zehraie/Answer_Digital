@@ -12,8 +12,9 @@ public class DropdownStepDefs {
     DropdownPage dropdownPage = new DropdownPage();
     List<String> actualOptions;
     @When("the user click on dropdown button")
-    public void the_user_click_on_dropdown_button() {
+    public void the_user_click_on_dropdown_button() throws InterruptedException {
       dropdownPage.dropDownBox.click();
+      Thread.sleep(10000);
     }
 
     @When("the user choses each option one by one")
