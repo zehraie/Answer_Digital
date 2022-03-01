@@ -53,11 +53,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user choses each option one by one",
+  "name": "the user can see default option \"Please select an option\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.answer.step_definitions.DropdownStepDefs.the_user_choses_each_option_one_by_one()"
+  "location": "com.answer.step_definitions.DropdownStepDefs.the_user_can_see_default_option(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -74,10 +74,8 @@ formatter.match({
   "location": "com.answer.step_definitions.DropdownStepDefs.the_user_can_see_each_following_options(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat com.answer.step_definitions.DropdownStepDefs.the_user_can_see_each_following_options(DropdownStepDefs.java:30)\r\n\tat ✽.the user can see each following options(file:///C:/Users/HP/IdeaProjects/Answer_Digital/src/test/resources/features/Dropdown.feature:9)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

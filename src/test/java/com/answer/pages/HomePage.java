@@ -18,6 +18,7 @@ public class HomePage {
 //    public WebElement keyPressLink;
 
     public void navigate(String link){
+
         Driver.get().findElement(By.linkText(link)).click();
     }
 
