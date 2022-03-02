@@ -16,7 +16,7 @@ public class DropdownStepDefs {
     @When("the user click on dropdown button")
     public void the_user_click_on_dropdown_button() throws InterruptedException {
         dropdownPage.dropDownBox.click();
-        Thread.sleep(10000);
+        Thread.sleep(9000);
 
     }
 
