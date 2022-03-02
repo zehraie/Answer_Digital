@@ -29,7 +29,6 @@ public class DropdownStepDefs {
     public void the_user_can_see_each_following_options(List<String> options) {
         List<String> actualOptions = BrowserUtils.getElementsText(dropdownPage.getOptions());
         Assert.assertTrue(actualOptions.containsAll(options));
-
     }
 
 
