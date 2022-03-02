@@ -16,8 +16,7 @@ public class DropdownStepDefs {
     @When("the user click on dropdown button")
     public void the_user_click_on_dropdown_button() throws InterruptedException {
         dropdownPage.dropDownBox.click();
-        Thread.sleep(9000);
-
+        Thread.sleep(5000);
     }
 
     @When("the user can see default option {string}")
