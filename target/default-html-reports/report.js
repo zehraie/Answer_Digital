@@ -1,13 +1,8 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Dropdown.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CheckBox.feature");
 formatter.feature({
-  "name": "Key Presses page",
+  "name": "CheckBox page",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
+  "keyword": "Feature"
 });
 formatter.scenario({
   "name": "the user clicks Dropdown button",
@@ -33,7 +28,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks on \"Dropdown\" link",
+  "name": "the user clicks on \"Checkboxes\" link",
   "keyword": "And "
 });
 formatter.match({
@@ -43,35 +38,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user click on dropdown button",
+  "name": "the user can check one checkbox",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.answer.step_definitions.DropdownStepDefs.the_user_click_on_dropdown_button()"
+  "location": "com.answer.step_definitions.CheckBoxStepDefs.the_user_can_check_one_checkbox()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user can see default option \"Please select an option\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.answer.step_definitions.DropdownStepDefs.the_user_can_see_default_option(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user can see each following options",
-  "rows": [
-    {},
-    {}
-  ],
+  "name": "the user can see the the checkbox checked",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.answer.step_definitions.DropdownStepDefs.the_user_can_see_each_following_options(java.util.List\u003cjava.lang.String\u003e)"
+  "location": "com.answer.step_definitions.CheckBoxStepDefs.the_user_can_see_the_the_checkbox_checked()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user can uncheck the other checkbox",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.CheckBoxStepDefs.the_user_can_uncheck_the_other_checkbox()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user can see the checkbox unchecked",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.answer.step_definitions.CheckBoxStepDefs.the_user_can_see_the_checkbox_unchecked()"
 });
 formatter.result({
   "status": "passed"

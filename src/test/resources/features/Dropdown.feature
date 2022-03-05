@@ -1,4 +1,4 @@
-@wip
+
 Feature: Key Presses page
 
     Scenario: the user clicks Dropdown button

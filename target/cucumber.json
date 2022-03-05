@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-03-01T12:03:06.525Z",
+        "start_timestamp": "2022-03-04T20:31:18.330Z",
         "before": [
           {
             "result": {
-              "duration": 6333000000,
+              "duration": 41279000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
+        "line": 3,
         "name": "the user clicks Dropdown button",
         "description": "",
-        "id": "key-presses-page;the-user-clicks-dropdown-button",
+        "id": "checkbox-page;the-user-clicks-dropdown-button",
         "after": [
           {
             "result": {
-              "duration": 1437000000,
+              "duration": 3779000000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3935000000,
+              "duration": 2635000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "the user is on the Menu page",
             "match": {
               "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
@@ -47,15 +47,15 @@
           },
           {
             "result": {
-              "duration": 5282000000,
+              "duration": 5773000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "the user clicks on \"Dropdown\" link",
+            "name": "the user clicks on \"Checkboxes\" link",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Dropdown\"",
+                  "val": "\"Checkboxes\"",
                   "offset": 19
                 }
               ],
@@ -65,56 +65,50 @@
           },
           {
             "result": {
-              "duration": 10149000000,
+              "duration": 485000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user click on dropdown button",
+            "name": "the user can check one checkbox",
             "match": {
-              "location": "com.answer.step_definitions.DropdownStepDefs.the_user_click_on_dropdown_button()"
+              "location": "com.answer.step_definitions.CheckBoxStepDefs.the_user_can_check_one_checkbox()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 132000000,
+              "duration": 847000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "the user can see default option \"Please select an option\"",
+            "name": "the user can see the the checkbox checked",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Please select an option\"",
-                  "offset": 32
-                }
-              ],
-              "location": "com.answer.step_definitions.DropdownStepDefs.the_user_can_see_default_option(java.lang.String)"
+              "location": "com.answer.step_definitions.CheckBoxStepDefs.the_user_can_see_the_the_checkbox_checked()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 106000000,
+              "duration": 68000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "the user can see each following options",
+            "name": "the user can uncheck the other checkbox",
             "match": {
-              "location": "com.answer.step_definitions.DropdownStepDefs.the_user_can_see_each_following_options(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.answer.step_definitions.CheckBoxStepDefs.the_user_can_uncheck_the_other_checkbox()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Option 1"
-                ]
-              },
-              {
-                "cells": [
-                  "Option 2"
-                ]
-              }
-            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user can see the checkbox unchecked",
+            "match": {
+              "location": "com.answer.step_definitions.CheckBoxStepDefs.the_user_can_see_the_checkbox_unchecked()"
+            },
             "keyword": "Then "
           }
         ],
@@ -125,20 +119,11 @@
         ]
       }
     ],
-    "name": "Key Presses page",
+    "name": "CheckBox page",
     "description": "",
-    "id": "key-presses-page",
+    "id": "checkbox-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Dropdown.feature",
-    "tags": [
-      {
-        "name": "@wip",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/CheckBox.feature",
+    "tags": []
   }
 ]
