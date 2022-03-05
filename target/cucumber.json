@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-03-01T12:03:06.525Z",
+        "start_timestamp": "2022-03-05T09:18:10.257Z",
         "before": [
           {
             "result": {
-              "duration": 6333000000,
+              "duration": 24039000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "the user clicks Dropdown button",
+        "line": 3,
+        "name": "the user clicks ChallengingDom button",
         "description": "",
-        "id": "key-presses-page;the-user-clicks-dropdown-button",
+        "id": "challenging-dom-page;the-user-clicks-challengingdom-button",
         "after": [
           {
             "result": {
-              "duration": 1437000000,
+              "duration": 1098000000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3935000000,
+              "duration": 3418000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "the user is on the Menu page",
             "match": {
               "location": "com.answer.step_definitions.FormAuthenStepDefs.the_user_is_on_the_Menu_page()"
@@ -47,15 +47,15 @@
           },
           {
             "result": {
-              "duration": 5282000000,
+              "duration": 6012000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the user clicks on \"Dropdown\" link",
+            "line": 5,
+            "name": "the user clicks on \"Challenging DOM\" link",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Dropdown\"",
+                  "val": "\"Challenging DOM\"",
                   "offset": 19
                 }
               ],
@@ -65,56 +65,20 @@
           },
           {
             "result": {
-              "duration": 10149000000,
+              "duration": 43000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "the user click on dropdown button",
-            "match": {
-              "location": "com.answer.step_definitions.DropdownStepDefs.the_user_click_on_dropdown_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 132000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user can see default option \"Please select an option\"",
+            "line": 6,
+            "name": "the user can see \"Adipisci3\" element on the screen",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Please select an option\"",
-                  "offset": 32
+                  "val": "\"Adipisci3\"",
+                  "offset": 17
                 }
               ],
-              "location": "com.answer.step_definitions.DropdownStepDefs.the_user_can_see_default_option(java.lang.String)"
+              "location": "com.answer.step_definitions.ChallengingDomStepDefs.the_user_can_see_element_on_the_screen(java.lang.String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 106000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user can see each following options",
-            "match": {
-              "location": "com.answer.step_definitions.DropdownStepDefs.the_user_can_see_each_following_options(java.util.List\u003cjava.lang.String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Option 1"
-                ]
-              },
-              {
-                "cells": [
-                  "Option 2"
-                ]
-              }
-            ],
             "keyword": "Then "
           }
         ],
@@ -125,20 +89,11 @@
         ]
       }
     ],
-    "name": "Key Presses page",
+    "name": "Challenging Dom Page",
     "description": "",
-    "id": "key-presses-page",
+    "id": "challenging-dom-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Dropdown.feature",
-    "tags": [
-      {
-        "name": "@wip",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/ChallengingDom.feature",
+    "tags": []
   }
 ]

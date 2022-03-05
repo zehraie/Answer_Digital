@@ -1,4 +1,4 @@
-@wip
+
 Feature: Dropdown page
 
     Scenario: the user clicks Dropdown button

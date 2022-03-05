@@ -1,5 +1,5 @@
-@wip
-Feature: Key Presses page
+
+Feature: Dropdown page
 
     Scenario: the user clicks Dropdown button
     Given the user is on the Menu page
