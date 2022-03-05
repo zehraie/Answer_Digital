@@ -13,6 +13,7 @@ public class CheckBoxStepDefs {
         checkBoxPage.checkbox1.click();
     }
 
+
     @Then("the user can see the the checkbox checked")
     public void the_user_can_see_the_the_checkbox_checked() {
         Assert.assertTrue(checkBoxPage.checkbox1.isSelected());
