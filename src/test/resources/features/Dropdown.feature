@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 Feature: Dropdown page
+=======
+Feature: Key Presses page
+>>>>>>> master
 
     Scenario: the user clicks Dropdown button
     Given the user is on the Menu page
