@@ -3,11 +3,19 @@
     "line": 1,
     "elements": [
       {
+<<<<<<< HEAD
+        "start_timestamp": "2022-03-05T09:18:10.257Z",
+        "before": [
+          {
+            "result": {
+              "duration": 24039000000,
+=======
         "start_timestamp": "2022-03-04T20:31:18.330Z",
         "before": [
           {
             "result": {
               "duration": 41279000000,
+>>>>>>> master
               "status": "passed"
             },
             "match": {
@@ -16,6 +24,15 @@
           }
         ],
         "line": 3,
+<<<<<<< HEAD
+        "name": "the user clicks ChallengingDom button",
+        "description": "",
+        "id": "challenging-dom-page;the-user-clicks-challengingdom-button",
+        "after": [
+          {
+            "result": {
+              "duration": 1098000000,
+=======
         "name": "the user clicks Dropdown button",
         "description": "",
         "id": "checkbox-page;the-user-clicks-dropdown-button",
@@ -23,6 +40,7 @@
           {
             "result": {
               "duration": 3779000000,
+>>>>>>> master
               "status": "passed"
             },
             "match": {
@@ -35,7 +53,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 3418000000,
+=======
               "duration": 2635000000,
+>>>>>>> master
               "status": "passed"
             },
             "line": 4,
@@ -47,6 +69,17 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 6012000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user clicks on \"Challenging DOM\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Challenging DOM\"",
+=======
               "duration": 5773000000,
               "status": "passed"
             },
@@ -56,6 +89,7 @@
               "arguments": [
                 {
                   "val": "\"Checkboxes\"",
+>>>>>>> master
                   "offset": 19
                 }
               ],
@@ -65,6 +99,22 @@
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user can see \"Adipisci3\" element on the screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Adipisci3\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.answer.step_definitions.ChallengingDomStepDefs.the_user_can_see_element_on_the_screen(java.lang.String)"
+            },
+=======
               "duration": 485000000,
               "status": "passed"
             },
@@ -109,6 +159,7 @@
             "match": {
               "location": "com.answer.step_definitions.CheckBoxStepDefs.the_user_can_see_the_checkbox_unchecked()"
             },
+>>>>>>> master
             "keyword": "Then "
           }
         ],
@@ -119,11 +170,19 @@
         ]
       }
     ],
+<<<<<<< HEAD
+    "name": "Challenging Dom Page",
+    "description": "",
+    "id": "challenging-dom-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ChallengingDom.feature",
+=======
     "name": "CheckBox page",
     "description": "",
     "id": "checkbox-page",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/CheckBox.feature",
+>>>>>>> master
     "tags": []
   }
 ]
